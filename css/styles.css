@@ -12,14 +12,15 @@
 - Grayish Blue: hsl(208, 11%, 55%) */
 /* font-family: 'Open Sans', sans-serif;
 font-family: 'Poppins', sans-serif; */
+
 h1,
 h2 {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   line-height: 1.5;
   padding-bottom: 30px;
 }
 p {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   padding-bottom: 30px;
 }
 img {
@@ -31,7 +32,7 @@ img {
   box-sizing: border-box;
 }
 .top {
-  background: url("../images/bg-hero-desktop.svg");
+  background: url('../images/bg-hero-desktop.svg');
   background-color: hsl(193, 100%, 96%);
 }
 ul {
@@ -110,15 +111,29 @@ button:hover {
   color: white;
   padding: 100px 50px 10px;
 }
+
 .flex {
   display: flex;
   justify-content: space-between;
 }
+
 .address {
   width: 500px;
   color: white;
   font-size: 16px;
 }
+
+.addy {
+  margin-bottom: 30px;
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  align-items: center;
+}
+
+.addy img {
+  margin-right: 5px;
+}
+
 i {
   padding: 5px;
 }
@@ -129,8 +144,9 @@ i {
 .about {
   font-size: 16px;
 }
+
 /* Media Queries */
-@media (max-width: 1200px) {
+@media only screen and (max-width: 1200px) {
   .intro {
     flex-direction: column;
     justify-content: center;
@@ -163,11 +179,5 @@ i {
     padding: 20px;
     display: flex;
     justify-content: center;
-  }
-  .address {
-    font-size: 16px;
-  }
-  .about {
-    font-size: 16px;
   }
 }
